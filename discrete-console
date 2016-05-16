@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+import os
+
+def main(cmmd):
+    os.system("sudo proxychains " + cmmd)
+    start()
+def start():
+    cmd = input("$")
+    if cmd == "":
+        start()
+    else:
+        main(cmd)
+def banner():
+    print("\033[1;32;40mDiscrete Console\nAutomatically proxies commands.")
+    print("\033[1;34;40mNo Need To Type Sudo.\033[1;37;40m")
+    print("Type any terminal command and it will run through ProxyChains automatically.")
+    start()
+banner()
