@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
+sudo apt-get install tor
 sudo apt-get install proxychains
 sudo apt-get install python3
 sudo cp discrete-console /bin/
